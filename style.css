@@ -1,17 +1,17 @@
-:root{--k:#000007;--w:#FBFBFB;--gold:linear-gradient(135deg,#EAD59E,#D5BE87);--red:linear-gradient(135deg,#EF0207,#9A0007)}
-*{box-sizing:border-box}body{margin:0;background:var(--w);color:var(--k);font-family:Inter,Helvetica,Arial,sans-serif}
+:root{--k:#000007;--w:#FBFBFB;--black:#000007;--white:#FBFBFB;--gold-a:#EAD59E;--gold-b:#D5BE87;--gold:linear-gradient(135deg,#EAD59E,#D5BE87);--red-a:#EF0207;--red-b:#9A0007;--red:linear-gradient(135deg,#EF0207,#9A0007);--max:1120px;--radius:8px;--nav-h:64px;--gap:22px;--section-pad:64px}
+*{box-sizing:border-box}body{margin:0;background:var(--w);color:var(--k);font-family:Inter,'Helvetica Neue',Helvetica,Arial,sans-serif}
 .gt{color:var(--k);background:var(--gold) left bottom/100% 3px no-repeat;padding-bottom:3px}
 .rt{background:var(--red);-webkit-background-clip:text;background-clip:text;color:transparent}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 32px;position:relative}
+header{display:flex;justify-content:space-between;align-items:center;min-height:64px;padding:0 32px;position:relative;background:var(--k);color:var(--w)}
 header:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--gold)}
-.logo{font-family:Georgia,serif;font-size:26px;letter-spacing:6px;font-weight:700}
-nav a{color:var(--k);opacity:.75;margin-left:22px;text-decoration:none;font-size:14px}nav a.on{opacity:1}
-main{max-width:1100px;margin:0 auto;padding:32px}
+.logo{font-family:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:26px;letter-spacing:6px;font-weight:700;text-transform:uppercase}
+nav a{color:var(--w);opacity:.75;margin-left:22px;text-decoration:none;font-size:14px}nav a.on{opacity:1}
+main{max-width:1120px;margin:0 auto;padding:64px 24px}
 h1{font-size:28px;margin:0 0 4px}.sub{opacity:.65;margin:0 0 24px;font-size:14px}
 .btn{border:0;padding:11px 20px;border-radius:8px;font-weight:700;cursor:pointer;color:var(--k);background:var(--gold);font-size:14px}
 .btn.red{background:var(--red);color:var(--w)}
-.gb{border:2px solid transparent;background:linear-gradient(#FBFBFB,#FBFBFB) padding-box,var(--gold) border-box;border-radius:14px}
-.rb{border:2px solid transparent;background:linear-gradient(#FBFBFB,#FBFBFB) padding-box,var(--red) border-box;border-radius:14px}
+.gb{border:2px solid transparent;background:linear-gradient(#FBFBFB,#FBFBFB) padding-box,var(--gold) border-box;border-radius:8px}
+.rb{border:2px solid transparent;background:linear-gradient(#FBFBFB,#FBFBFB) padding-box,var(--red) border-box;border-radius:8px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .tile{padding:22px}.tile h3{margin:6px 0 4px;font-size:19px}.tile p{margin:0;opacity:.7;font-size:14px}
 .bar{height:8px;background:rgba(0,0,7,.12);border-radius:8px;margin:14px 0 6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold)}
@@ -20,7 +20,7 @@ h1{font-size:28px;margin:0 0 4px}.sub{opacity:.65;margin:0 0 24px;font-size:14px
 .p-pend{border:1.5px solid transparent;background:linear-gradient(var(--w),var(--w)) padding-box,var(--gold) border-box}
 .p-miss{border:1.5px solid rgba(0,0,7,.5);color:var(--k)}
 .picker{padding:22px;margin-bottom:28px}.types{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
-.type{padding:14px;border-radius:10px;border:1px solid rgba(0,0,7,.25);font-weight:600}.type.sel{border:2px solid transparent;background:linear-gradient(var(--w),var(--w)) padding-box,var(--gold) border-box}
+.type{padding:14px;border-radius:8px;border:1px solid rgba(0,0,7,.25);font-weight:600}.type.sel{border:2px solid transparent;background:linear-gradient(var(--w),var(--w)) padding-box,var(--gold) border-box}
 .row{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid rgba(0,0,7,.1)}
 .row .n{flex:1}.row .n b{display:block}.row .n small{opacity:.6}.note{font-size:12px;margin-top:4px}
 .ub{background:transparent;color:var(--k);border:2px solid transparent;background:linear-gradient(var(--w),var(--w)) padding-box,var(--gold) border-box;padding:8px 16px;border-radius:8px;font-weight:600}
